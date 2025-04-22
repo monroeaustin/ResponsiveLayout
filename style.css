@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+.headshot{
+    max-width: 1000px;
+    object-fit: contain;
+}
+
+
+.headshotimg{
+    width: 100%;
+}
+div{
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: auto;
+ 
+}
+.bigcontainer{
+    flex-direction: row;
+    display: flex;
+}
+
+.socials > a {
+    width: 30px;
+}
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.coloumn{
+    display:flex;
+    flex-direction: column;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+    box-shadow: 2px black;
+    background-color: white; /* required for shadow to show */
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2); /* soft subtle shadow */
+    border-radius: 8px; /* optional: for smooth corners */
+    transition: box-shadow 0.3s ease; /* optional: for hover effect */
+}
+.icon{
+    height: 25px;
+}
+.topsection{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+}
+.iconcontainer{
+    margin-left: auto;
+}
+.topcard{
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.bottomcard{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 1.6rem;
+}
+
+.container-holding{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: auto;
+}
+.secretary{
+    max-height: 350px
+}
+.bottomcontainer{
+    background-color: #008c99;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    
+}
+#id1{
+    background-color: #9b1c1c;
+}
+#id2{
+    background-color: #9a84d9;
+}
+#id3{
+    background-color: #4b8254;
+}
+#id4{
+    background-color: #cd88cc;
+}
+#id5{
+    background-color: #da9c38;
+}
+#id6{
+    background-color: #4bb3d3;
+}
+h3{
+    color: white;
+}
+
+.lefft > *{
+    color: white;
+}
+.space{
+    margin-top: 4rem;
+}
+.about{
+    background-color: white; /* required for shadow to show */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* soft subtle shadow */
+    border-radius: 6px; /* optional: for smooth corners */
+    transition: box-shadow 0.3s ease; /* optional: for hover effect */
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+h1{
+    margin-bottom: 1rem;
+}
+.hero {
+    position: relative;
+    max-width: 400px;
+    max-height: 300px;
+    overflow: hidden;
+    margin-bottom: 4rem;
+    display: flex;
+  }
+  
+  .hero-img {
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background-color: white; /* helps show shadow if there's transparency */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* nice soft shadow */
+  border-radius: 6px;
+  transition: box-shadow 0.3s ease;
+  }
+.top-hero{
+    display: flex;
+    margin: 1rem auto;
+    max-width: 90%;
+    position: relative;
+    z-index: 1;
+    justify-content: space-evenly;
+}
+
+  .container-pause::before{
+    width: 100vw;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    min-height: 18rem;
+    background-color: #008c99;
+    transform: skewY(-3deg);
+    transform-origin: top;
+    z-index: -1;
+  }
+  .topsection > h4{
+margin-top: auto;
+margin-bottom: auto;
+font-size: 1.2rem;
+  }
+.lefft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+
+/* Small devices (phones) */
+@media (max-width: 576px) {
+    .top-hero{
+        flex-direction: column;
+    }
+    .hero {
+        
+        margin-bottom: 2rem;
+       
+    }
+    .grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+    }
+    .container-holding {
+        flex-direction: column;
+        
+    }
+    .secretary{
+        height: auto;
+        object-fit: cover; /* optional, for maintaining proportions inside a box */
+        max-width: 100%;
+
+    }
+    .lefft {
+        align-items: center;
+    }
+    .right{
+        margin: auto;
+    }
+  }
+  
+  /* Medium devices (tablets) */
+  @media (max-width: 768px) {
+    .secretary{
+        max-height: 225px;
+    }
+    .space {
+        margin-top: 3.5rem;
+    }
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+  }
+  
+  /* Large devices (small laptops) */
+  @media (max-width: 992px) {
+    /* styles for small laptops */
+  }
+  
+  /* Extra large devices (desktops) */
+  @media (max-width: 1200px) {
+    /* styles for desktops */
+  }
+  
