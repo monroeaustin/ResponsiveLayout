@@ -242,6 +242,18 @@ font-size: 1.2rem;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
+    .container-pause::before {
+        z-index: 0;
+      }
+      .top-hero {
+        position: relative;
+        z-index: 2;
+        margin-top: 3rem;
+      }
+      .hero {
+        z-index: 2;
+      }
+      
   }
   
   /* Large devices (small laptops) */
